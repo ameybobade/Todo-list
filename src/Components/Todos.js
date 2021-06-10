@@ -6,7 +6,7 @@ export const Todos = (props) => {
         minHeight:"70vh",
     }
     return (
-        <div className="container my-3" style={myStyles}>
+        <div className="container my-3 border border-dark rounded p-4" style={myStyles}>
             <h3 className="text-center">Todo List</h3>
             {props.todos.length===0? "No todos to display":
             props.todos.map((todo)=>{
