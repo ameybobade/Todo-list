@@ -8,8 +8,12 @@ export const AddTodo = ({addTodo}) => {
     
     const submit = (e) => {
         e.preventDefault();
-        if (!title || !desc) {
-            alert("Title or Description cannot be blank");
+        if (!title) {
+            alert("Title cannot be blank");
+        }
+        else if (!desc)
+        {
+            alert("Description cannot be blank");
         }
         else {
             addTodo(title, desc);
